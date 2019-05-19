@@ -1,0 +1,128 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, able, input, textarea, select{
+    margin: 0;
+    padding: 0;
+    list-style: none;  /*去掉以上标签自身属性*/
+}
+body{
+    background-color:#e9eaed;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;    /*修改连接自身属性*/
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #1C2327 ;
+}
+.headerBOX {
+    width: 1200px;
+    height: 100%;
+    background:#1C2327 ;
+    margin: 0 auto ;
+}
+.headerBOX h1{
+    /*width: 160px;*/
+    height: 100%;
+    margin-right: 80px;
+    background: #1C2327 ;
+    float:left;        /*浮动*/
+    line-height: 60px;   /*垂直居中*/
+    font-family: 楷体;    /*修改字体*/
+    /*font-size: larger;    修改字体大小*/
+}
+.title{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #e4e3e3;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.title::before {
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: black ;
+    transition: all .5s ease-in;
+    overflow: hidden;
+}
+.title:hover::before {
+    content: '';
+    height: 2px;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: black ;
+    transition: all .5s ease-in;
+    overflow: hidden;
+}
+
+
+.header .headerBOX ul{
+    /*width: 760px;*/
+    height: 100%;
+    margin-right: 190px;
+    background: #1C2327 ;
+    float:left;
+}
+.headerBOX ul li{
+    margin: 0 20px;
+    float: left;
+    line-height: 60px;
+    font-family: 微软雅黑;
+}
+.headerBOX a{
+    color: white;
+}
+.header .headerBOX .search{
+    /*width: 50px;*/
+    height: 100%;
+    background: blue ;
+    float:right;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    background: black ;
+    margin: 20px auto;
+}
+
+.left{
+    width: 960px;
+    height: auto;
+    background: #3bacfe ;
+    float: left;
+}
+.left .blog{
+    width: 900px;
+    height: 120px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background: #009966;
+}
+
+.left .essay{
+    width: 900px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    background: #009966;
+}
+.right{
+    width: 240px;
+    height: 300px;
+    background: black ;
+    float: right;
+}
