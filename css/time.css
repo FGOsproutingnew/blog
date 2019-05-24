@@ -1,0 +1,157 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, able, input, textarea, select{
+    margin: 0;
+    padding: 0;
+    list-style: none;  /*去掉以上标签自身属性*/
+}
+body{
+    background-color:#e9eaed;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;    /*修改连接自身属性*/
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #1C2327 ;
+}
+.headerBOX {
+    width: 1200px;
+    height: 100%;
+    background:#1C2327 ;
+    margin: 0 auto ;
+}
+.headerBOX h1{
+    /*width: 160px;*/
+    height: 100%;
+    margin-right: 80px;
+    background: #1C2327 ;
+    float:left;        /*浮动*/
+    line-height: 60px;   /*垂直居中*/
+    font-family: 楷体;    /*修改字体*/
+    /*font-size: larger;    修改字体大小*/
+}
+.header .headerBOX ul{
+    /*width: 760px;*/
+    height: 100%;
+    margin-right: 190px;
+    background: #1C2327 ;
+    float:left;
+}
+.headerBOX ul li{
+    margin: 0 20px;
+    float: left;
+    line-height: 60px;
+    font-family: 微软雅黑;
+}
+.header .headerBOX .search{
+    /*width: 50px;*/
+    height: 100%;
+    background: blue ;
+    float:right;
+}
+.headerBOX a{
+    color: white;
+}
+
+article {
+    width: 1200px;
+    margin:20px auto;
+    overflow: hidden;
+}
+.timebox {
+    background: url(../image/abbg.png) no-repeat right top #fff;
+    padding: 30px;
+}
+
+.whitebg {
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.htitle {
+    font-size: 16px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    color: #484848;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 10px;
+}
+.htitle:after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    bottom: 0;
+    transition: all .5s ease;
+}
+.htitle:hover:after {
+    width: 80px;
+}
+.timebox ul {
+    overflow: hidden;
+}
+.timebox span {
+    position: relative;
+    line-height: 32px;
+    padding-right: 40px;
+    color: #999;
+}
+.timebox span:after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 40px;
+    background: #e0dfdf;
+    right: 18px;
+}
+.timebox li i:before {
+    content: " ";
+    height: 10px;
+    width: 10px;
+    border: 2px solid #cccaca;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    left: -26px;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+.timebox li i:hover:before{
+    background: #000;
+
+}
+.timebox li i {
+    position: relative;
+    font-style: normal;
+}
+#list a{
+    color: #333;
+}
+#list a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.pagelist.mt20 {
+    margin-top: 20px;
+}
+
+.pagelist {
+    text-align: center;
+    color: #666;
+    width: 100%;
+    clear: both;
+    margin: 0 0 10px;
+}
+.pagelist a {
+    color: #666;
+    margin: 0 5px 10px;
+    padding: 5px 10px;
+    background: #F7F7F7;

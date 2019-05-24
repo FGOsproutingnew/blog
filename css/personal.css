@@ -89,40 +89,277 @@ a{
     background: blue ;
     float:right;
 }
+.title{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #e4e3e3;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.title::before {
+    content: '';
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: black ;
+    transition: all .5s ease-in;
+    overflow: hidden;
+}
+.title:hover::before {
+    content: '';
+    height: 2px;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background: black ;
+    transition: all .5s ease-in;
+    overflow: hidden;
+}
 
-.content{
+
+
+
+
+.tail {
     width: 1200px;
     height: auto;
-    background: black ;
     margin: 20px auto;
+    background: #e9eaed;
 }
-
-.left{
-    width: 960px;
+.tail .tailLeft{
+    width: 900px;
     height: auto;
-    background: #3bacfe ;
+    margin: 0 18px 0 0;
+    background: #e9eaed;
     float: left;
 }
-.left .blog{
-    width: 900px;
-    height: 120px;
+.tail .tailLeft .essay {
+    width: 860px;
+    /*height: 760px;*/
     padding: 20px;
+    background: #ffffff ;
+}
+.essay .essayuptitle{
+    height: 40px;
+    overflow: hidden;
+    border-bottom: 1px solid #e4e3e3;
+    margin-bottom: 20px;
+}
+.essay .essayud > ul > li{
+    width: 860px;
+    height: 204px;
+    padding-top: 20px;
+    border-bottom: 1px dotted #e4e3e3;
+    margin-bottom: 20px;
+}
+.essay .essayud > li .essayuptitle {
+    width: 860px;
+    height: 18px;
+    margin-top: 25px;
+    background: #ffffff ;
+}
+.essay .essayud .essayuptitle h3 a{
+    font-size: 18px;
+    float: left;
+}
+.essay .essaycontent .left{
+    width: 200px;
+    height: 100px;
+    margin-top: 14px;
+    margin-bottom: 23px;
+    float: left;
+}
+.essay .essaycontent .right{
+    width: 640px;
+    height: 124px;
+    margin-left: 20px;
+    margin-top: 14px;
+    float: left;
+}
+.essay .essaycontent .right p{
+    margin-bottom: 10px;
+    font: 14px/1.5 微软雅黑 sans-serif;
+    height: 62px;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    size: 10px;
+}
+.essay .essaycontent .right li{
+    width: 80px;
+    height: 28px;
+    float: left;
+    margin-top: 32px;
     margin-bottom: 20px;
     margin-right: 20px;
-    background: #009966;
+}
+.essay .essaycontent .right .button{
+    width: 80px;
+    height: 28px;
+    border-radius: 2px;
+    background: #12b7de;
+    float: right;
+    text-align: center ;
+}
+.essay .essaycontent .right img{
+    width: 34px;
+    height: 34px;
+    margin-left: 20px;
+    float: left;
 }
 
-.left .essay{
-    width: 900px;
-    height: auto;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    background: #009966;
-}
-.right{
-    width: 240px;
-    height: 300px;
-    background: black ;
+
+.tail .tailRight{
+    width: 282px;
+    height:auto;
+    /*margin: 0 18px 0 0;*/
+    background: #e9eaed;
     float: right;
 }
+.tail .tailRight .ranking{
+    width: 242px;
+    height: auto;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    background: #ffffff;
+}
+.tail .tailRight .ranking .P img{
+    width: 242px;
+    height: 70px;
+    /*margin-top: 20px;*/
+    /*margin-left: 20px;*/
+}
+.tail .tailRight .ranking {
+    width: 242px;
+    /*height: 230px;*/
+    padding: 20px;
+    /*margin-top: 20px;*/
+    /*margin-left: 14px ;*/
+    background:#ffffff;
+    border-radius: 5px;
+    float:right;
+}
+.tail .tailRight .ranking .rankcontent li a{
+    width: 100%;
+    color: black;
+    display: block;
+    margin-left: 5px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tail .tailRight .ranking .rankcontent li{
+    width: 214px;
+    height: 30px;
+    margin: 10px auto;
+    font-size: 14px;
+    padding-left: 30px;
+    color: black;
+    border-radius: 5px;
+    background: #f6f6f6;
+    position: relative;
+}
+.ranking .rankcontent li::before{
+    content:'1';
+    width: 16px;
+    height: 16px;
+    background: #ff6600 ;
+    text-align: center ;
+    display: block;
+    line-height: 16px;
+    font-size: 14px;
+    color: #ffe7ff;
+    position: absolute;
+    left:9px;
+    top:7px;
+}
+.ranking .rankcontent li:first-child::before{
+    content: "1";
+    background: #ff6600 ;
+    color: #ffe7ff;
+}
+.ranking .rankcontent li:nth-child(2)::before{
+    content: "2";
+    background: #ff6600 ;
+    color: #ffe7ff;
+}
+.ranking .rankcontent li:nth-child(3)::before{
+    content: "3";
+    background: #ff6600 ;
+    color: #ffe7ff;
+}
+.ranking .rankcontent li:nth-child(4)::before{
+    content: "4";
+    background: #b1b1b1 ;
+    color: #ffe7ff;
+}
+.ranking .rankcontent li:nth-child(5)::before{
+    content: "5";
+    background: #b1b1b1 ;
+    color: #ffe7ff;
+}
+.ranking .rankcontent li:nth-child(6)::before{
+    content: "6";
+    background: #b1b1b1 ;
+    color: #ffe7ff;
+}
+.ranking .rankcontent li:nth-child(7)::before{
+    content: "7";
+    background: #b1b1b1 ;
+    color: #ffe7ff;
+}
+
+
+
+
+
+
+.tail .tailRight .recommend{
+    width: 242px;
+    height: auto;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    background: #ffffff;
+}
+.tail .tailRight .recommend  img{
+    width: 242px;
+    height: 70px;
+    /*margin-top: 20px;*/
+    /*margin-left: 20px;*/
+}
+.tail .tailRight .recommend {
+    width: 242px;
+    /*height: 230px;*/
+    padding: 20px;
+    /*margin-top: 20px;*/
+    /*margin-left: 14px ;*/
+    background:#ffffff;
+    border-radius: 5px;
+    float:right;
+}
+.tail .tailRight .recommend .recommendcontent li{
+    width: 242px;
+    height: 60px;
+    margin: 10px auto;
+    color: black;
+    /*border-radius: 5px;*/
+    background: #f6f6f6;
+    font-size: 14px;
+}
+.tail .tailRight .recommend .recommendcontent li a{
+    color: black;
+}
+.tailRight .recommend .recommendcontent > ul > li img {
+    width: 70px;
+    height: 60px;
+    float: left;
+}
+

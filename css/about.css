@@ -1,0 +1,132 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, able, input, textarea, select{
+    margin: 0;
+    padding: 0;
+    list-style: none;  /*去掉以上标签自身属性*/
+}
+body{
+    background-color:#e9eaed;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;    /*修改连接自身属性*/
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background: #1C2327 ;
+}
+.headerBOX {
+    width: 1200px;
+    height: 100%;
+    background:#1C2327 ;
+    margin: 0 auto ;
+}
+.headerBOX h1{
+    /*width: 160px;*/
+    height: 100%;
+    margin-right: 80px;
+    background: #1C2327 ;
+    float:left;        /*浮动*/
+    line-height: 60px;   /*垂直居中*/
+    font-family: 楷体;    /*修改字体*/
+    /*font-size: larger;    修改字体大小*/
+}
+.header .headerBOX ul{
+    /*width: 760px;*/
+    height: 100%;
+    margin-right: 190px;
+    background: #1C2327 ;
+    float:left;
+}
+.headerBOX ul li{
+    margin: 0 20px;
+    float: left;
+    line-height: 60px;
+    font-family: 微软雅黑;
+}
+.header .headerBOX .search{
+    /*width: 50px;*/
+    height: 100%;
+    background: blue ;
+    float:right;
+}
+.headerBOX a{
+    color: white;
+}
+
+
+article{
+    width: 1200px;
+    margin:20px auto;
+    overflow: hidden;
+}
+.about{
+    overflow: hidden;
+    background: url(../image/abbg.png) no-repeat right top #FFFFFF;
+    padding: 20px 40px;
+}
+
+.whitebg {
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.ab_box {
+    overflow: hidden;
+    margin: 20px 0;
+}
+.avatar_pic img {
+    width: 100%;
+    border-radius: 50%;
+}
+.avatar_pic {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    background: linear-gradient(to top right, rgba(0,153,255,.9), rgba(42,228,197,.7));
+    display: block;
+    padding: 2px;
+    width: 100px;
+    border-radius: 50%;
+}
+.avatar_pic:before {
+    position: absolute;
+    content: "";
+    background: url(../image/v.png) no-repeat;
+    bottom: 0px;
+    right: 10px;
+    height: 24px;
+    width: 24px;
+    background-size: 24px;
+}
+img {
+    border: 0;
+    display: block;
+}
+.ab_box h3 {
+    margin: 10px 0 10px;
+    font-size: 18px;
+}
+.ab_box p {
+    color: #666;
+    margin-bottom: 5px;
+}
+.gd_title {
+    margin: 20px 0;
+    font-size: 18px;
+    background: url(../image/hline.png) no-repeat bottom right;
+    width: 120px;
+    clear: both;
+    background-size: 40px;
+    border-bottom: #000 1px dashed;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    /*display: inline-block;*/
+}
+.ab_dubai {
+    margin-bottom: 15px;
+    /*display: inline-block;*/
+}
