@@ -108,6 +108,7 @@ img{
     height: 30px;
     position: absolute;
     left: 30px;
+    z-index: 99999;
     /*float: left;*/
 }
 .markleft .flip  img{
@@ -119,6 +120,7 @@ img{
     height: 30px;
     position: absolute;
     right: 30px;
+    z-index: 99999;
     /*float: right;*/
 }
 
@@ -132,6 +134,7 @@ img{
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    z-index: 99999;
 }
 .markleft .imgopt ul li{
     width: 10px;
@@ -141,6 +144,14 @@ img{
     background: white;
     /*position: absolute;*/
     float: left;
+}
+.markleft .imgopt ul li > a{
+    width: 10px;
+    height: 10px;
+    display: block;
+}
+.markleft .imgopt ul .hot{
+    background: #3bacfe;
 }
 
 
