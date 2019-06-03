@@ -13,8 +13,8 @@ window.onload=function () {
         home.style.color = '#ffffff';
     };
 
-    let diaryleft = document.getElementsByClassName('diaryleft');
-    let title = diaryleft[0].getElementsByClassName('title');
+    let diaryleft = document.getElementsByClassName('.diaryleft');
+    let title = diaryleft[0].getElementsByClassName('.title');
     let li1 = title[0].getElementsByTagName('li');
     for (let i=0;i<li1.length;i++){
         li1[i].onclick=function () {

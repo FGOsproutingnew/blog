@@ -73,6 +73,10 @@ img{
     background: red;
     float:left;
     position: relative;
+    overflow: hidden;
+}
+.markleft .image{
+    overflow: hidden;
 }
 .markleft .image li{
     width: 100%;
@@ -135,6 +139,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     z-index: 99999;
+    overflow: hidden;
 }
 .markleft .imgopt ul li{
     width: 10px;
@@ -176,10 +181,12 @@ img{
 
     /*float: left;*/
 }
+
 .mark  .markmid .markmup a{
     width: 100%;
     height: 100%;
     display: block;
+    overflow: hidden;
 }
 .mark  .markmid .markmup img{
     width: 100%;
@@ -189,6 +196,7 @@ img{
     top: 0;
     transition: scale 0.1s linear 0.2s;
     transform: scale(1.1,1.3);
+    overflow: hidden;
 }
 .mark .markmid .markmup img:hover{
     width: 300px;
